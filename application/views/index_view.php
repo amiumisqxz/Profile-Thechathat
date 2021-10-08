@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile Thechathat</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,20 +16,20 @@
     <!-- สร้างเมนู -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
-            <a href="index.html" class="navbar-brand"><MY PROFILE THECHATHAT></a>
+            <a href="index_view.php" class="navbar-brand"><MY PROFILE THECHATHAT></a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbar1" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">หน้าแรก</a>
+                        <a href="<?php echo site_url('profile/index');?>" class="nav-link">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">ประวัติส่วนตัว</a>
+                    <a href="<?php echo site_url('profile/about');?>" class="nav-link">ประวัติส่วนตัว</a>
                     <li class="nav-item">
                     </li>
-                        <a href="ผลงาน.html" class="nav-link">ผลงาน</a>
+                    <a href="<?php echo site_url('profile/workings');?>" class="nav-link">ผลงาน</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">เกี่ยวกับเรา</a>
@@ -183,7 +183,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p>Copyright &copy; KongRuksiam Official 2021</p>
+                    <p>Copyright &copy; Thechathat Official 2021</p>
                 </div>
             </div>
         </div>
